@@ -73,6 +73,12 @@ function showError(input, message) {
   input.parentElement.querySelector('small').innerText = `${message}`;
 }
 
+//function Local Storage
+
+function setLocalStorage() {
+
+}
+
 //add Event Listener
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -81,4 +87,7 @@ form.addEventListener('submit', e => {
   checkLength(password, 6, 12);
   checkEmail(email);
   checkPassword(password, password2);
+  //localStorage.setItem(`${user}, ${password}`);
+  localStorage.setItem(user.value, password.value);
+
 });
