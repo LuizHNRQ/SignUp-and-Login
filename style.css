@@ -62,7 +62,7 @@ button {
 }
 
 button a {
-  text-decoration: none;
+  font-size: 12px;
   color: white;
 }
 
@@ -96,5 +96,11 @@ h2 {
 }
 
 .forgot {
-  background-color: green;
+  margin-top: 5px;
+  font-size: 12px;
+  color: rgb(92, 65, 216);
+}
+
+.txt-small {
+  font-size: 13px;
 }
