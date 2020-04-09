@@ -7,6 +7,7 @@ const password2 = document.querySelector('#password2');
 //functions
 
 function isEmpty(input) {
+
   input.forEach(entry => {
     if (entry.value === '') {
       showError(entry, 'Campo não pode ser vazio');
@@ -72,22 +73,3 @@ function showError(input, message) {
   input.parentElement.classList.add('error');
   input.parentElement.querySelector('small').innerText = `${message}`;
 }
-
-//function Local Storage
-
-function setLocalStorage() {
-
-}
-
-//add Event Listener
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  isEmpty([user, email, password, password2]);
-  checkLength(user, 3, 12);
-  checkLength(password, 6, 12);
-  checkEmail(email);
-  checkPassword(password, password2);
-  //localStorage.setItem(`${user}, ${password}`);
-  localStorage.setItem(user.value, password.value);
-
-});
