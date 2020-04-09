@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: rgb(193, 193, 233);
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.field label {
+  display: block;
+  padding: 10px 0px;
+  color: rgba(22, 21, 20, 0.692);
+  font-weight: 500;
+}
+
+.field input {
+  display: block;
+  margin: 0;
+  padding: 7px 10px;
+  border-radius: 5px;
+  width: 94%;
+  border: 2px solid white;
+  background-color: rgb(234, 234, 243);
+}
+
+input::placeholder {
+  color: rgba(83, 79, 79, 0.452);
+}
+
+.field small {
+  display: block;
+  padding: 5px 2px 2px 2px;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(138, 143, 216);
+  border: rgb(138, 143, 216) 1px solid;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button.log {
+  background-color: rgb(118, 189, 71);
+  border: rgb(118, 189, 71) 1px solid;
+}
+
+.field small {
+  visibility: hidden;
+}
+
+h2 {
+  margin: 0 auto;
+  font-size: 26px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  color: black;
+}
+
+.success input {
+  border: 2px solid rgb(170, 226, 160);
+}
+
+.error input {
+  border: 2px solid rgb(236, 179, 177);
+}
+
+.error small {
+  visibility: visible;
+}
+
+.forgot {
+  background-color: green;
+}
