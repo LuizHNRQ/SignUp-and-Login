@@ -4,7 +4,7 @@ A project of a Sign-Up and Login pages, using only HTML, CSS and Javascript.
 
 ### How it works?
 
-It Validates the info in the fields using only **Vanilla Javascript** and Regular expression, than armazenates in the local storage for further atenps to login in the **Login.html** page.
+It Validates the info in the fields using only **Vanilla Javascript** and Regular expression, than armazenates in the local storage for further attempts to login in the **Login.html** page.
 
 ### How it's storage the infos?
 
